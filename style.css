@@ -1,0 +1,55 @@
+@font-face {
+    font-family: grandfit;
+    src: url(/Grandift\ Regular.otf);
+}
+*{
+    background-color: rgb(0, 0, 0);
+}
+#board, .boardInfo{
+    max-width: 500px;
+    margin: auto;
+    margin-top: 200px;
+}
+#board{
+    border: 2px solid rgb(181, 194, 197);
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+#start, .boardInfo{
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+#gameOver{
+    display: none;
+    color: white
+}
+.boardInfo{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    color: white;
+}
+#start{
+    background-color: red;
+    border: none;
+    color: white;
+}
+#scoreBoard{
+    display: inline-flex;
+    color: white;
+}
+.square{
+    aspect-ratio: 1;
+}
+.emptySquare{
+    background-color: rgb(33, 33, 34);
+}
+.snakeSquare{
+    background-color: greenyellow;
+    border: solid 0.5px rgba(69, 153, 4, 0.385);
+}
+.foodSquare{
+    background-color: rgb(255, 82, 82);
+    border: solid 0.5px rgb(213, 93, 8);
+}
